@@ -101,3 +101,22 @@ The `.git` folder is a hidden directory at the root of a Git repository that con
 
 ### Using the Config File in the `.ssh` Folder
 1. Open or create `~/.ssh/config` and add an entry block:
+
+
+text
+Host aws-server
+HostName 54.210.10.1
+User ubuntu
+IdentityFile ~/.ssh/my-aws-key.pem
+
+
+2. **Connect using configured alias**: Run `ssh aws-server`.
+
+---
+
+## 5. Resources
+
+* [Git Documentation](https://git-scm.com/doc) - Used for official Git command explanations and definitions.
+* [Docker Documentation](https://docs.docker.com/engine/reference/commandline/cli/) - Used for Docker command usage and flag specifications.
+* [GitHub SSH Setup Guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) - Reference for SSH key generation and GitHub authentication.
+* [AWS EC2 Connecting Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) - Reference for connecting to Linux EC2 instances.
